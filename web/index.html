@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prizma — laboratórium Eurojackpotu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,640&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/learn.css" />
+</head>
+<body>
+  <aside class="rail">
+    <div class="brand">
+      <div class="mark" aria-hidden="true"></div>
+      <div>
+        <strong>Prizma</strong>
+        <span>Eurojackpot lab</span>
+      </div>
+    </div>
+    <nav id="nav">
+      <button data-view="overview" class="active">Prehľad</button>
+      <button data-view="numbers">Čísla</button>
+      <button data-view="patterns">Vzory</button>
+      <button data-view="tests">Testy náhody</button>
+      <button data-view="learn">Self-improving</button>
+      <button data-view="predict">Predikcia</button>
+      <button data-view="archive">Archív</button>
+      <button data-view="method">Metodika</button>
+    </nav>
+    <div class="rail-foot">
+      <p>990 žrebov · 2012–2026</p>
+      <p>Dáta z oficiálneho API</p>
+    </div>
+  </aside>
+
+  <main>
+    <header class="top">
+      <div>
+        <p class="kicker" id="kicker">Laboratórium</p>
+        <h1 id="title">Prehľad</h1>
+      </div>
+      <div class="top-controls">
+        <label class="era-box">
+          Obdobie
+          <select id="era">
+            <option value="current">Aktuálne pravidlá · 2 z 12</option>
+            <option value="2of12_tue_fri">2022–teraz · utorok+piatok</option>
+            <option value="2of10_friday">2014–2022 · 2 z 10</option>
+            <option value="2of8_friday">2012–2014 · 2 z 8</option>
+            <option value="all">Celá história (zmiešané pravidlá)</option>
+          </select>
+        </label>
+        <div class="next-chip" id="nextChip"></div>
+      </div>
+    </header>
+
+    <p class="honesty" id="honesty"></p>
+
+    <section id="view-overview" class="view"></section>
+    <section id="view-numbers" class="view hidden"></section>
+    <section id="view-patterns" class="view hidden"></section>
+    <section id="view-tests" class="view hidden"></section>
+    <section id="view-learn" class="view hidden"></section>
+    <section id="view-predict" class="view hidden"></section>
+    <section id="view-archive" class="view hidden"></section>
+    <section id="view-method" class="view hidden"></section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <script src="/app.js"></script>
+  <script src="/learn.js"></script>
+</body>
+</html>

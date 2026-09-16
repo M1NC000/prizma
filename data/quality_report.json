@@ -1,0 +1,134 @@
+{
+  "draw_count": 990,
+  "first_draw": "2012-03-23",
+  "last_draw": "2026-09-15",
+  "draws_by_year": {
+    "2012": 41,
+    "2013": 52,
+    "2014": 52,
+    "2015": 52,
+    "2016": 53,
+    "2017": 52,
+    "2018": 52,
+    "2019": 52,
+    "2020": 52,
+    "2021": 53,
+    "2022": 92,
+    "2023": 104,
+    "2024": 105,
+    "2025": 104,
+    "2026": 74
+  },
+  "draws_by_era": {
+    "2of8_friday": 133,
+    "2of10_friday": 389,
+    "2of12_tue_fri": 468
+  },
+  "jackpots_won": 166,
+  "structural_issue_count": 0,
+  "structural_issues": [],
+  "westlotto_compared": 511,
+  "westlotto_mismatches": [],
+  "westlotto_mismatch_count": 0,
+  "euroj_compared": 990,
+  "euroj_mismatches": [
+    {
+      "draw_date": "2014-01-17",
+      "api_main": [
+        4,
+        7,
+        17,
+        25,
+        29
+      ],
+      "euroj_main": [
+        4,
+        7,
+        15,
+        25,
+        29
+      ],
+      "api_euro": [
+        2,
+        4
+      ],
+      "euroj_euro": [
+        2,
+        4
+      ]
+    },
+    {
+      "draw_date": "2025-01-24",
+      "api_main": [
+        2,
+        9,
+        16,
+        46,
+        47
+      ],
+      "euroj_main": [
+        1,
+        9,
+        16,
+        46,
+        47
+      ],
+      "api_euro": [
+        3,
+        9
+      ],
+      "euroj_euro": [
+        3,
+        9
+      ]
+    }
+  ],
+  "euroj_mismatch_count": 2,
+  "calendar_missing_expected": [],
+  "calendar_extra_vs_tue_fri_rule": [],
+  "api_incomplete_flag_draws": [
+    "2025-06-27",
+    "2025-07-01",
+    "2025-07-04",
+    "2025-07-08"
+  ],
+  "secondary_source_number_mismatches_are_euroj_errors": true,
+  "ok": true,
+  "generated_at_utc": "2026-09-16T15:10:53Z",
+  "primary_source": "https://www.eurojackpot.com/wlinfo/WL_InfoService",
+  "notes": [
+    "Primary numbers and prize tables come from the official eurojackpot.com / WestLotto JSON API.",
+    "WestLotto Excel 2012–2021 matched 511/511 draws on sorted main+euro numbers.",
+    "euroj.eu matched 988/990 draws. The 2 mismatches are euroj.eu typos; official API plus independent sites confirm 2014-01-17 = 4,7,17,25,29 + 2,4 and 2025-01-24 = 2,9,16,46,47 + 3,9.",
+    "api_incomplete_flag is copied from the official fehlenDaten field. Those 4 draws still have full numbers and 12 prize classes.",
+    "advertised_jackpot_eur for draw 1 is the official starting jackpot of 10,000,000 EUR. Later draws use the previous draw's published next jackpot.",
+    "prize_class numbering changed between eras. Use match_code (e.g. 5+2, 4+0) for historical comparisons."
+  ],
+  "files": [
+    "eurojackpot_analysis.csv",
+    "eurojackpot_complete.xlsx",
+    "eurojackpot_draws.csv",
+    "eurojackpot_draws.json",
+    "eurojackpot_number_frequency.csv",
+    "eurojackpot_prize_tiers.csv",
+    "eurojackpot_regional_winners.csv",
+    "eurojackpot_yearly_summary.csv",
+    "quality_report.json"
+  ],
+  "completeness_verdict": "COMPLETE",
+  "completeness": {
+    "total_draws": 990,
+    "first_draw": "2012-03-23",
+    "last_published_draw": "2026-09-15",
+    "calendar_match": true,
+    "official_api_files_valid": 990,
+    "westlotto_excel_2012_2021_numbers": "511/511",
+    "jackpotstat_dates": "990/990",
+    "jackpotstat_numbers": "990/990",
+    "euroj_lotostatistika_dates": "990/990",
+    "euroj_lotostatistika_number_typos": 2,
+    "no_draw_before_launch": true,
+    "no_draw_on_2022-03-22": true,
+    "next_unplayed_draw_2026-09-18_not_included": true
+  }
+}
