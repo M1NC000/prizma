@@ -35,12 +35,14 @@ Má to vypísať `3.12.x`. Ak `python3 -c 'import platform; print(platform.machi
 
 ### 2. Stiahni projekt
 
+GitHub **neprijíma heslo k účtu** pri `git clone`. Repo je verejné, stačí:
+
 ```bash
 git clone https://github.com/M1NC000/prizma.git
 cd prizma
 ```
 
-Alebo v GitHub Desktop: **File → Clone repository → prizma**.
+Ak by si ho neskôr spravil súkromným, prihlás sa cez GitHub CLI (`brew install gh` → `gh auth login`) a potom `gh repo clone M1NC000/prizma`.
 
 ### 3. Spusti
 
