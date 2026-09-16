@@ -36,7 +36,7 @@ Má to vypísať `3.12.x`. Ak `python3 -c 'import platform; print(platform.machi
 ### 2. Stiahni projekt
 
 ```bash
-git clone https://github.com/bielikmilan226-hue/prizma.git
+git clone https://github.com/M1NC000/prizma.git
 cd prizma
 ```
 
